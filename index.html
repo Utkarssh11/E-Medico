@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-Medico: Your trusted online pharmacy for easy medicine ordering, prescription uploads, and quick delivery.">
+    <title>E-Medico - Modern Online Pharmacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+      // Tailwind CSS Configuration
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                light: '#3b82f6', // blue-500
+                DEFAULT: '#2563eb', // blue-600
+                dark: '#1d4ed8', // blue-700
+              },
+              secondary: {
+                light: '#2dd4bf', // teal-400
+                DEFAULT: '#14b8a6', // teal-500
+                dark: '#0d9488', // teal-600
+              },
+              success: {
+                light: '#4ade80', // green-400
+                DEFAULT: '#22c55e', // green-500
+                dark: '#16a34a', // green-600
+              },
+              danger: {
+                light: '#f87171', // red-400
+                DEFAULT: '#ef4444', // red-500
+                dark: '#dc2626', // red-600
+              },
+              warning: {
+                light: '#facc15', // yellow-400
+                DEFAULT: '#eab308', // yellow-500
+                dark: '#ca8a04', // yellow-600
+              },
+            },
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'slide-up': 'slideUp 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: 0 },
+                '100%': { transform: 'translateY(0)', opacity: 1 },
+              },
+            },
+          },
+        },
+        plugins: [
+          // Example: If you were using @tailwindcss/forms, you'd typically not load it via CDN plugin system this way.
+          // CDN plugins are limited. For full plugin support, a build step is needed.
+        ],
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚕️</text></svg>">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<script>
+  // Initial dark mode check and localStorage sync
+  (function() {
+    var themeToSet = 'light'; // Default to light
+    try {
+      var storedTheme = localStorage.getItem('eMedicoTheme');
+      if (storedTheme === 'dark' || storedTheme === 'light') {
+        themeToSet = storedTheme;
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        themeToSet = 'dark';
+      }
+    } catch (e) { /* ignore errors */ }
+
+    if (themeToSet === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    
+    try {
+      localStorage.setItem('eMedicoTheme', themeToSet);
+    } catch (e) { /* ignore errors */ }
+  })();
+</script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-inter transition-colors duration-300">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
