@@ -1,6 +1,6 @@
 # E-Medico — Smart Online Pharmacy Platform
 
-**E-Medico** is a modern, secure, and fully responsive full-stack web application that enables users to search, upload prescriptions, and order medicines online. It features real-time pharmacy availability, prescription verification, and a smooth, animated UI designed for a professional medical experience.
+**E-Medico** is a modern, secure, and fully responsive web application that enables users to search, upload prescriptions, and order medicines online. It features real-time pharmacy availability, prescription verification, and a smooth, animated UI designed for a professional medical experience.
 
 ---
 
