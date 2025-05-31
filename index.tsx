@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import ReactDOM from 'react-dom/client';
 
 // Import new page components
-import HomePage from './components/HomePage';
+import HomePage from './components/HomePage.tsx'; // Added .tsx extension
 import MedicineCatalog from './components/MedicineCatalog';
 import UploadPrescriptionPage from './components/UploadPrescriptionPage';
 import CartPage from './components/CartPage';
