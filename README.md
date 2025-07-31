@@ -1,61 +1,45 @@
 # E-Medico — Smart Online Pharmacy Platform
 
-**E-Medico** is a modern, secure, and fully responsive web application that enables users to search, upload prescriptions, and order medicines online. It features real-time pharmacy availability, prescription verification, and a smooth, animated UI designed for a professional medical experience.
+**E-Medico** is a responsive front-end web application built using React.js, HTML, CSS, and Bootstrap. It is designed to help users search for medicines, upload prescriptions, and place orders online through a clean and professional interface.
 
----
+## Features Implemented (Frontend Only)
 
-## Features
+- User login/signup interface  
+- Home page with search functionality  
+- Medicine catalog layout with search filters  
+- Cart page to add, edit, and remove items  
+- Upload prescription UI (frontend only)  
+- Light/Dark mode toggle with saved preference  
+- Basic pharmacy location input field (map not yet integrated)  
+- Checkout page UI with payment options (not functional yet)
 
-### User Management
-- Register/Login with email, phone, or social accounts
-- Profile dashboard with order history, saved addresses, and payment methods
-- Password encryption and secure authentication
+## Features In Progress
 
-### Medicine Catalog & Cart
-- Search medicines by name, symptoms, or brand
-- Add/edit/delete items in a dynamic cart
-- Show alternatives, pricing, and availability
+- Google Maps integration for locating nearby pharmacies  
+- Backend connectivity for login, cart, and orders  
+- Payment gateway integration (Stripe, Razorpay, UPI)  
+- OCR functionality for reading prescriptions
 
-### Prescription Upload
-- Upload or capture a doctor's prescription
-- OCR integration to read medicine names and dosages
-- Manual review and correction supported
-- Secure and compliant prescription storage (GDPR-ready)
+## Tech Stack
 
-### Nearby Pharmacy Locator
-- Use geolocation to find nearby pharmacies
-- Filters: delivery available, open now, ratings
-- Maps API integrated for a visual location view
+- Frontend: React.js, JavaScript, HTML5, CSS3, Bootstrap  
+- Tools: VS Code, Git, GitHub  
+- State Management: React Hooks, Context API  
+- Hosting (planned): Vercel or Netlify
 
-### Checkout & Payment
-- Choose between delivery or pickup
-- Pay using cards, wallets, UPI (via Stripe/Razorpay/Paytm)
-- Realtime order tracking and email/SMS notifications
+## Notes
 
-### Theme Support
-- Light/Dark mode toggle with smooth transitions
-- LocalStorage saves preferred theme
-- Fully styled and responsive in both modes
+Currently, the project focuses on frontend development only. Backend and third-party service integrations (maps, payment, OCR) are still in progress.
 
-## Project Structure
+## Live 
 
-```
 
-/src
-│
-├── index.html                # Base HTML file
-├── index.tsx                 # Main React app entry
-├── auth.tsx                  # Login/Register components
-├── cart.tsx                  # Cart logic and display
-├── data\_object.ts            # Sample medicine and pharmacy data
-├── metadata.json             # Config, themes, prescription rules
-├── uploadPrescription.tsx    # OCR + image upload
-├── pharmacyLocator.ts        # Geolocation logic
-├── notifications.ts          # Push/email setup
-├── components/
-│   ├── HomePage.tsx          # Landing page with hero/search
-│   ├── MedicineCatalog.tsx   # Medicine listing page
-│   └── SearchBar.tsx         # Modern search input (used globally)
-└── styles/
-└── index.css             # Global styles and overrides
+[Live Link](https://e-medico.vercel.app/)
+## Developer
+
+**Utkarsh Patidar**  
+Email: utkarshpatidar011@gmail.com  
+[LinkedIn](https://linkedin.com/in/utkarsh-patidar-800081221)  
+[GitHub](https://github.com/Utkarssh11)
+
 
